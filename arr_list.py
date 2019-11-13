@@ -1,7 +1,7 @@
 #array training
 from typing import List
 
-countries = ['ukraine','poland','hungary','slovakia']
+countries = ['ukraine','poland','hungary','slovakia', 'czechia']
 print(countries)
 num = len(countries)
 print(num)
