@@ -28,7 +28,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>py/test-input.py at master · d1one777/py</title>
+  <title>py/arg_switch.py at master · d1one777/py</title>
     <meta name="description" content="Contribute to d1one777/py development by creating an account on GitHub.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -38,9 +38,9 @@
     <meta property="og:image" content="https://avatars1.githubusercontent.com/u/24757703?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="d1one777/py" /><meta property="og:url" content="https://github.com/d1one777/py" /><meta property="og:description" content="Contribute to d1one777/py development by creating an account on GitHub." />
 
   <link rel="assets" href="https://github.githubassets.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDYxODQ4MTg0OmY1NDgwNjZlNjczZmI1OWE4ZmFiYTliZWU1ZTczMGE4MWQ4Y2ViZGI1NTY4MWFhOWRkZTFhYjI1YTJjMmQ2OWQ=--37fca9037ca5d2e2e1df0f4d742f8676ed4903b0">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDYxODQ4MTg0OjU2YTJkOTgzZWIzYWE0NTI5ZDYxOTI0NDg3MzRhMjEwOWVlZmNhMDljMjViYjc1MTc5MTYxNTQ3OGY0YzRlMTY=--6a83264e65f1a5e27e3fbae6c7de6eeb0c986d4d">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="0771:4187E:DB48CA:145500B:5DCD3F53" data-pjax-transient>
+  <meta name="request-id" content="0771:4187E:DB7193:145A372:5DCD3F83" data-pjax-transient>
 
 
   
@@ -51,7 +51,7 @@
     <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
 
-  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="0771:4187E:DB48CA:145500B:5DCD3F53" /><meta name="octolytics-dimension-region_edge" content="ams" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="8262771008892468817" /><meta name="octolytics-actor-id" content="24757703" /><meta name="octolytics-actor-login" content="d1one777" /><meta name="octolytics-actor-hash" content="6f9eac0315cc789ca4104a0824fd68e94b4fe72cceb04700ccb07249093d1435" />
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="0771:4187E:DB7193:145A372:5DCD3F83" /><meta name="octolytics-dimension-region_edge" content="ams" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-dimension-visitor_id" content="8262771008892468817" /><meta name="octolytics-actor-id" content="24757703" /><meta name="octolytics-actor-login" content="d1one777" /><meta name="octolytics-actor-hash" content="6f9eac0315cc789ca4104a0824fd68e94b4fe72cceb04700ccb07249093d1435" />
 <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
 
 
@@ -70,7 +70,7 @@
     <meta name="user-login" content="d1one777">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="MmJkNDM3YmQxOWIzNDU3NmU5ZTQwODZlMmY2MzBmMjJiZDVkNTA1ZWJhYzI0MjIzNmQ2NTA0NGQzODI5NjViNXx7InJlbW90ZV9hZGRyZXNzIjoiMzcuNTcuMjQuMjEyIiwicmVxdWVzdF9pZCI6IjA3NzE6NDE4N0U6REI0OENBOjE0NTUwMEI6NURDRDNGNTMiLCJ0aW1lc3RhbXAiOjE1NzM3MzIyMDEsImhvc3QiOiJnaXRodWIuY29tIn0=">
+    <meta name="js-proxy-site-detection-payload" content="ZDcwOGMwOGNkMzg0MzZkNzY4MzlmYjkxYTBmZjg4YTZlZDk1YmUwZDJkNmFlZWQ4ODY0NDY1N2I3NmY0M2M3ZXx7InJlbW90ZV9hZGRyZXNzIjoiMzcuNTcuMjQuMjEyIiwicmVxdWVzdF9pZCI6IjA3NzE6NDE4N0U6REI3MTkzOjE0NUEzNzI6NURDRDNGODMiLCJ0aW1lc3RhbXAiOjE1NzM3MzIyMzUsImhvc3QiOiJnaXRodWIuY29tIn0=">
 
     <meta name="enabled-features" content="LAUNCH_PROJECT,ACTIONS_V2_ON_MARKETPLACE,MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PENDING_INSTALLATIONS,NOTIFY_ON_BLOCK,RELATED_ISSUES,GHE_CLOUD_TRIAL">
 
@@ -86,7 +86,7 @@
   <meta name="octolytics-dimension-user_id" content="24757703" /><meta name="octolytics-dimension-user_login" content="d1one777" /><meta name="octolytics-dimension-repository_id" content="221679676" /><meta name="octolytics-dimension-repository_nwo" content="d1one777/py" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="221679676" /><meta name="octolytics-dimension-repository_network_root_nwo" content="d1one777/py" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="true" />
 
 
-    <link rel="canonical" href="https://github.com/d1one777/py/blob/master/test-input.py" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/d1one777/py/blob/master/arg_switch.py" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -160,7 +160,7 @@
           aria-autocomplete="list"
           aria-controls="jump-to-results"
           aria-label="Search or jump to…"
-          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=kmC7rI4sWf/wgxwS5qSNEFlKQjJGx2We4jV/8AA6CO/GjsdkvDDm/VwFO5Pl7y7XyFkDbnVTxTHKleMATFwXsw=="
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=L2TC6awxy5NduHTbveNUghI8Btd0YFaFbSko5nXNuPN7ir4hni10kfE+U1q+qPdFgy9Hi0f09ipFibQWOaunrw=="
           spellcheck="false"
           autocomplete="off"
           >
@@ -313,7 +313,7 @@
       <img class="avatar" height="20" width="20" alt="@d1one777" src="https://avatars1.githubusercontent.com/u/24757703?s=60&amp;v=4" />
       d1one777
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="a4+XgTzkkaHfeOfla6DZTQpwRVLkJ7j6XQ4r7Gn+K2zN5izC60PCNEJbwcRzdEUUasuc8zabl/QbiR9DCdUrTQ==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="gIVfZvvS8BeI2laToIKZofWO3KxozlUFwTHFwZEDjqYm7OQlLHWjghX5cLK4VgX4lTUFDbpyeguHtvFu8SiOhw==" />
       <button type="submit" class="Header-link mr-0 mr-lg-3 py-2 py-lg-0 border-top border-lg-top-0 border-white-fade-15 d-lg-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
         <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9V7H8V5h4V3l4 3-4 3zm-2 3H6V3L2 1h8v3h1V1c0-.55-.45-1-1-1H1C.45 0 0 .45 0 1v11.38c0 .39.22.73.55.91L6 16.01V13h4c.55 0 1-.45 1-1V8h-1v4z"/></svg>
         Sign out
@@ -406,7 +406,7 @@
   " data-team-hovercards-enabled>
   <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
     <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit "
-      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:24757703,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:24757703,&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB48CA:145500B:5DCD3F53&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/test-input.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;}}" data-hydro-click-hmac="1015bb37f553e6c75a638e7eaecd127bdd414ea9037561bd4c301a02e4b87d6b">
+      role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:24757703,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:24757703,&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB7193:145A372:5DCD3F83&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/arg_switch.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;}}" data-hydro-click-hmac="a1dde7019d83139156afc88d0edc2e5b2000f10716cd7399aa9680f944ad6690">
       <div class="d-flex">
         <div class="f6 lh-condensed user-status-header
           d-inline-block v-align-middle
@@ -433,7 +433,7 @@
       </div>
     </summary>
     <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
-      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="27DveoJiu8LjoCbQedAaoAXajZ86hWec05ZO+zLY/mS6k8VGD1RTu1OQPS/4JhOM63bRoUIetSdmt16hwZ/drQ==" />
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="y/BQZapmALgZr1ubD43jhRTTy9E9ws0i3wdeoFgd1MOq03pZJ1DowamfQGSOe+qp+n+X70VZH5lqJk76q1r3Cg==" />
         <div class="Box-header bg-gray border-bottom p-3">
           <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
             <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
@@ -553,17 +553,17 @@
       </li>
       <li class="dropdown-divider" role="none"></li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-11-14T14:20:01+02:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-11-14T14:20:35+02:00">
             in 30 minutes
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-11-14T14:50:01+02:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-11-14T14:50:35+02:00">
             in 1 hour
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-11-14T17:50:01+02:00">
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-11-14T17:50:35+02:00">
             in 4 hours
           </button>
         </li>
@@ -621,10 +621,10 @@
     class="dropdown-item btn-link"
     role="menuitem"
     data-feature-preview-trigger-url="/users/d1one777/feature_previews"
-    data-feature-preview-close-details="{&quot;event_type&quot;:&quot;feature_preview.clicks.close_modal&quot;,&quot;payload&quot;:{&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB48CA:145500B:5DCD3F53&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/test-input.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;,&quot;user_id&quot;:24757703}}"
-    data-feature-preview-close-hmac="1e06e9cab66de0643d8f68e1a1c929c7bdb2bb179a013b13503a84f9553f2352"
-    data-hydro-click="{&quot;event_type&quot;:&quot;feature_preview.clicks.open_modal&quot;,&quot;payload&quot;:{&quot;link_location&quot;:&quot;user_dropdown&quot;,&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB48CA:145500B:5DCD3F53&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/test-input.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;,&quot;user_id&quot;:24757703}}"
-    data-hydro-click-hmac="16f16565aa9a124f96e8602ec7a323babb2fa5075fea13b7399d99070b6496bd"
+    data-feature-preview-close-details="{&quot;event_type&quot;:&quot;feature_preview.clicks.close_modal&quot;,&quot;payload&quot;:{&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB7193:145A372:5DCD3F83&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/arg_switch.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;,&quot;user_id&quot;:24757703}}"
+    data-feature-preview-close-hmac="243f83a6199407c1c79b2c03b38666bf7740d0b953a051542ecd9665f2e416b7"
+    data-hydro-click="{&quot;event_type&quot;:&quot;feature_preview.clicks.open_modal&quot;,&quot;payload&quot;:{&quot;link_location&quot;:&quot;user_dropdown&quot;,&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB7193:145A372:5DCD3F83&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/arg_switch.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;,&quot;user_id&quot;:24757703}}"
+    data-hydro-click-hmac="7fc3253815c02e6ad32a352892295c6126c0559b54c9aa7aaca5eb804ef866a6"
   >
     Feature preview
   </button>
@@ -633,7 +633,7 @@
 
     <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
     <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="TAEhp7dRvcZK31NNLDtcqvxLw2ZCWtxppPHP4M2GHXHqaJrkYPbuU9f8dWw078DznPAax5Dm82fidvtPra0dUA==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="fs6xZWBWayFWjl63qb/+WTMmFRgpxUshxdSX/nSqgqTYpwomt/E4tMuteJaxa2IAU53Muft5ZC+DU6NRFIGChQ==" />
       
       <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
         Sign out
@@ -686,10 +686,10 @@
 
   <li>
     
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="2LCMEJhB5v8kaaYSf8AYeO+TK4TAcUeufItjIdQPwCGyUAM2giV0FzMRL9hVlxYBklkqWNfi61RMLctLBiemLw==" />      <input type="hidden" name="repository_id" value="221679676">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="tXRyXCz5NFKpt6unmyBQHcNr1Ka7I67DI4w2kIx47sHflP16Np2mur7PIm2xd15kvqHVeqywAjkTKp76XlCIzw==" />      <input type="hidden" name="repository_id" value="221679676">
 
       <details class="details-reset details-overlay select-menu float-left">
-        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:221679676,&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB48CA:145500B:5DCD3F53&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/test-input.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;,&quot;user_id&quot;:24757703}}" data-hydro-click-hmac="7bbac073483f9c1a3af0f0d8757beae6e7951478d83c9bb88809aa7c328cf5a1" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
+        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:221679676,&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB7193:145A372:5DCD3F83&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/arg_switch.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;,&quot;user_id&quot;:24757703}}" data-hydro-click-hmac="7f743d85a8013ba4bf3a6a0079b1336b75cf25274888163b27b26f56c42adfa1" data-ga-click="Repository, click Watch settings, action:blob#show">          <span data-menu-button>
               <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
               Unwatch
           </span>
@@ -760,18 +760,18 @@
 
   <li>
       <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/d1one777/py/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="nzrLqZcXkb0gyzdugd6dLQibmoAivcL0doVI7rJQXtGRwyW2npwrc+rPdoiB5G88+EprwgJe8IwiejoQ1/oJSw==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/d1one777/py/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Zu9A/Da4pmHjLMBGV1QoY7QdFdtH2jKhRnK+vmE3NENoFq7jPzMcrykogaBXbtpyRMzkmWc5ANkSjcxABJ1j2Q==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar d1one777/py" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:221679676,&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB48CA:145500B:5DCD3F53&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/test-input.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;,&quot;user_id&quot;:24757703}}" data-hydro-click-hmac="f1d8a1baf0f4b245825b35bfc8a1ef798130ba04dc0862db7ac5725f460b2e6e" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar d1one777/py" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:221679676,&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB7193:145A372:5DCD3F83&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/arg_switch.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;,&quot;user_id&quot;:24757703}}" data-hydro-click-hmac="d19f657d8d9e91239ea589e898a3768eec998a58b483fd19852bfdbc00bbbeca" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
         Unstar
 </button>        <a class="social-count js-social-count" href="/d1one777/py/stargazers"
            aria-label="0 users starred this repository">
            0
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/d1one777/py/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="6wA8T2k7byQL6zm5HdfQlCkff2Y0yQqJG7UJdumu9YrUCEoBJXb1nwTRGlHgHQqD9HrFKej3DHlH0JxewZPzNA==" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/d1one777/py/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="NUxSLP09Qo/TaQDDWcAygffQvKuagpa43wI+OHqyrmEKRCRisXDYNNxTIyukCuiWKrUG5Ea8kEiDZ6sQUo+o3w==" />
       <input type="hidden" name="context" value="repository"></input>
-      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star d1one777/py" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:221679676,&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB48CA:145500B:5DCD3F53&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/test-input.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;,&quot;user_id&quot;:24757703}}" data-hydro-click-hmac="be562ff4a89b0b627ff7ebb263c843023720b646dc328a28a3495306b9e9183c" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star d1one777/py" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:221679676,&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB7193:145A372:5DCD3F83&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/arg_switch.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;,&quot;user_id&quot;:24757703}}" data-hydro-click-hmac="449911db5a3c1a01fb049eeecd840cadf8873f2566df274d4b907f63229714d9" data-ga-click="Repository, click star button, action:blob#show; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
         Star
 </button>        <a class="social-count js-social-count" href="/d1one777/py/stargazers"
            aria-label="0 users starred this repository">
@@ -930,9 +930,9 @@
   
 
 
-    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/d1one777/py/blob/2eca216c90c56ad72ad50bef7daed4cf9b99d4b3/test-input.py">Permalink</a>
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/d1one777/py/blob/2eca216c90c56ad72ad50bef7daed4cf9b99d4b3/arg_switch.py">Permalink</a>
 
-    <!-- blob contrib key: blob_contributors:v21:2231707317c526b07221f18b209e97c2 -->
+    <!-- blob contrib key: blob_contributors:v21:bc1a5fa291b8ac5a7a4664fb105f6f65 -->
       
 
     <div class="d-flex flex-items-start flex-shrink-0 pb-3 flex-column flex-md-row">
@@ -946,7 +946,7 @@
     <span class="css-truncate-target" data-menu-button>master</span>
   </summary>
 
-  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/d1one777/py/ref-list/master/test-input.py?source_action=show&amp;source_controller=blob" preload>
+  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/d1one777/py/ref-list/master/arg_switch.py?source_action=show&amp;source_controller=blob" preload>
     <include-fragment class="select-menu-loading-overlay anim-pulse">
       <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
     </include-fragment>
@@ -960,13 +960,13 @@
                 data-hotkey="t">
             Find file
           </a>
-          <clipboard-copy value="test-input.py" class="btn btn-sm BtnGroup-item">
+          <clipboard-copy value="arg_switch.py" class="btn btn-sm BtnGroup-item">
             Copy path
           </clipboard-copy>
         </div>
       </span>
       <h2 id="blob-path" class="breadcrumb flex-auto min-width-0 text-normal flex-md-self-center ml-md-2 mr-md-3 my-2 my-md-0">
-        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/d1one777/py"><span>py</span></a></span></span><span class="separator">/</span><strong class="final-path">test-input.py</strong>
+        <span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/d1one777/py"><span>py</span></a></span></span><span class="separator">/</span><strong class="final-path">arg_switch.py</strong>
       </h2>
 
       <div class="BtnGroup flex-shrink-0 d-none d-md-inline-block">
@@ -976,7 +976,7 @@
               data-hotkey="t">
           Find file
         </a>
-        <clipboard-copy value="test-input.py" class="btn btn-sm BtnGroup-item">
+        <clipboard-copy value="arg_switch.py" class="btn btn-sm BtnGroup-item">
           Copy path
         </clipboard-copy>
       </div>
@@ -984,45 +984,16 @@
 
 
 
-    
-  <div class="Box Box--condensed d-flex flex-column flex-shrink-0">
-      <div class="Box-body d-flex flex-justify-between bg-blue-light flex-column flex-md-row flex-items-start flex-md-items-center">
-        <span class="pr-md-4 f6">
-          <a rel="author" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=24757703" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/d1one777"><img class="avatar" src="https://avatars2.githubusercontent.com/u/24757703?s=40&amp;v=4" width="20" height="20" alt="@d1one777" /></a>
-          <a class="text-bold link-gray-dark lh-default v-align-middle" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=24757703" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/d1one777">d1one777</a>
-            <span class="lh-default v-align-middle">
-              <a data-pjax="true" title="basic python" class="link-gray" href="/d1one777/py/commit/2eca216c90c56ad72ad50bef7daed4cf9b99d4b3">basic python</a>
-            </span>
-        </span>
-        <span class="d-inline-block flex-shrink-0 v-align-bottom f6 mt-2 mt-md-0">
-          <a class="pr-2 text-mono link-gray" href="/d1one777/py/commit/2eca216c90c56ad72ad50bef7daed4cf9b99d4b3" data-pjax>2eca216</a>
-          <relative-time datetime="2019-11-14T11:23:38Z" class="no-wrap">Nov 14, 2019</relative-time>
-        </span>
+    <include-fragment src="/d1one777/py/contributors/master/arg_switch.py" class="Box Box--condensed commit-loader">
+      <div class="Box-body bg-blue-light f6">
+        Fetching contributors&hellip;
       </div>
 
-    <div class="Box-body d-flex flex-items-center flex-auto f6 border-bottom-0 flex-wrap" >
-      <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark float-left mr-2" id="blob_contributors_box">
-        <summary class="btn-link">
-          <span><strong>1</strong> contributor</span>
-        </summary>
-        <details-dialog
-          class="Box Box--overlay d-flex flex-column anim-fade-in fast"
-          aria-label="Users who have contributed to this file"
-          src="/d1one777/py/contributors/master/test-input.py/list" preload>
-          <div class="Box-header">
-            <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
-              <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
-            </button>
-            <h3 class="Box-title">
-              Users who have contributed to this file
-            </h3>
-          </div>
-          <include-fragment class="octocat-spinner my-3" aria-label="Loading..."></include-fragment>
-        </details-dialog>
-      </details>
-    </div>
-  </div>
-
+      <div class="Box-body d-flex flex-items-center" >
+          <img alt="" class="loader-loading mr-2" src="https://github.githubassets.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
+        <span class="text-red h6 loader-error">Cannot retrieve contributors at this time</span>
+      </div>
+</include-fragment>
 
 
 
@@ -1032,35 +1003,35 @@
 <div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
 
-      13 lines (10 sloc)
+      11 lines (7 sloc)
       <span class="file-info-divider"></span>
-    274 Bytes
+    117 Bytes
   </div>
 
   <div class="d-flex py-1 py-md-0 flex-auto flex-order-1 flex-md-order-2 flex-sm-grow-0 flex-justify-between">
 
     <div class="BtnGroup">
-      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/d1one777/py/raw/master/test-input.py">Raw</a>
-        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/d1one777/py/blame/master/test-input.py">Blame</a>
-      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/d1one777/py/commits/master/test-input.py">History</a>
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/d1one777/py/raw/master/arg_switch.py">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/d1one777/py/blame/master/arg_switch.py">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/d1one777/py/commits/master/arg_switch.py">History</a>
     </div>
 
 
     <div>
             <a class="btn-octicon tooltipped tooltipped-nw hide-sm"
-               href="x-github-client://openRepo/https://github.com/d1one777/py?branch=master&amp;filepath=test-input.py"
+               href="x-github-client://openRepo/https://github.com/d1one777/py?branch=master&amp;filepath=arg_switch.py"
                aria-label="Open this file in GitHub Desktop"
                data-ga-click="Repository, open with desktop, type:windows">
                 <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
             </a>
 
-            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/d1one777/py/edit/master/test-input.py" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="+UwRLkDiBaRjQ+3JXC2BAdlCDSw5ibUHMYkaSvgE7Yu/ct7dNooAkW1CrBc2plHFLtt9anDQSBdW2gmC7UFJoA==" />
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/d1one777/py/edit/master/arg_switch.py" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Hm6/Y8LpNAGEA8ic0r0wzrAUaFfitq3KEfLtrTEU6hFuOObn9mIl9Hi4rRs8vlOI5HU5FOFUNN90rtPJW5q6mg==" />
               <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
                 aria-label="Edit this file" data-hotkey="e" data-disable-with>
                 <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 011.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
               </button>
 </form>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/d1one777/py/delete/master/test-input.py" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="TrekwoJMX2U4w+YIlU6En5MFHWctJ2MT3MigSpISbaHerNRf8aRQ55DGxr/CL5rT8jv7XMCD0xIRtD0C2sgUXA==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/d1one777/py/delete/master/arg_switch.py" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="GLBj4scqqASfyrqGl4IeUnAfPQVvrZYp3Q3Y2IcKPA9ExZihU+H7nvZB42r+k9t3pTZ3zuVxv0p5Qezt3AWxYQ==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="Delete this file" data-disable-with>
               <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -1082,7 +1053,7 @@
               </p>
             </div>
             <div class="col-6 p-2 text-right code-navigation-banner-illo">
-              <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-notice-dismiss" action="/settings/dismiss-notice/aleph_code_navigation_banner" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ltPdPg6QeMzgsGDSnmVrruc8edEswE/8798I0Xih0II95EKBvHPYJG4s/Yce9YKnEaizBV/8dw2ZJxrKyu5isg==" />
+              <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-notice-dismiss" action="/settings/dismiss-notice/aleph_code_navigation_banner" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="j43hKDVfpczNyS/xK3Db5f42rQ9KesssTVkPGoofum0kun6Xh7wFJENVsqSr4DLsCKJn2zlG8907oR0BOFAIXQ==" />
                 <button name="button" type="submit" class="btn-link link-gray" aria-label="Dismiss">
                   <svg width="20" height="20" class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
 </button></form>            </div>
@@ -1108,58 +1079,46 @@
 <table class="highlight tab-size js-file-line-container" data-tab-size="8">
       <tr>
         <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>Input - Output IO</span></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span>arg + switch + if</span></td>
       </tr>
       <tr>
         <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> datetime</td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line">
+</td>
       </tr>
       <tr>
         <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="LC3" class="blob-code blob-code-inner js-file-line">
-</td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> sys</td>
       </tr>
       <tr>
         <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
-        <td id="LC4" class="blob-code blob-code-inner js-file-line">name <span class="pl-k">=</span> <span class="pl-c1">input</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>Your first name: <span class="pl-pds">&quot;</span></span>)</td>
-      </tr>
-      <tr>
-        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="LC5" class="blob-code blob-code-inner js-file-line">name <span class="pl-k">=</span> name.title()</td>
-      </tr>
-      <tr>
-        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">print</span>(name)</td>
-      </tr>
-      <tr>
-        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
-        <td id="LC7" class="blob-code blob-code-inner js-file-line">
+        <td id="LC4" class="blob-code blob-code-inner js-file-line">
 </td>
       </tr>
       <tr>
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line">x <span class="pl-k">=</span> <span class="pl-c1">len</span>(sys.argv)</td>
+      </tr>
+      <tr>
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">print</span>(x)</td>
+      </tr>
+      <tr>
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">print</span>(sys.argv[<span class="pl-c1">0</span>])</td>
+      </tr>
+      <tr>
         <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
-        <td id="LC8" class="blob-code blob-code-inner js-file-line">month <span class="pl-k">=</span> <span class="pl-c1">input</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>month (format XX): <span class="pl-pds">&quot;</span></span>)</td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">print</span>(sys.argv[<span class="pl-c1">1</span>])</td>
       </tr>
       <tr>
         <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
-        <td id="LC9" class="blob-code blob-code-inner js-file-line">year <span class="pl-k">=</span> <span class="pl-c1">input</span>(<span class="pl-s"><span class="pl-pds">&quot;</span>year (format XXXX): <span class="pl-pds">&quot;</span></span>)</td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">print</span>(sys.argv[<span class="pl-c1">2</span>])</td>
       </tr>
       <tr>
         <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
         <td id="LC10" class="blob-code blob-code-inner js-file-line">
 </td>
-      </tr>
-      <tr>
-        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
-        <td id="LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">print</span>(month <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&quot;</span> <span class="pl-pds">&quot;</span></span> <span class="pl-k">+</span> year)</td>
-      </tr>
-      <tr>
-        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
-        <td id="LC12" class="blob-code blob-code-inner js-file-line">realdate <span class="pl-k">=</span> datetime.date.today()</td>
-      </tr>
-      <tr>
-        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">print</span>(realdate.month, realdate.year )</td>
       </tr>
 </table>
 
@@ -1179,7 +1138,7 @@
             Copy permalink
           </clipboard-copy>
         </li>
-        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/d1one777/py/blame/2eca216c90c56ad72ad50bef7daed4cf9b99d4b3/test-input.py">View git blame</a></li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/d1one777/py/blame/2eca216c90c56ad72ad50bef7daed4cf9b99d4b3/arg_switch.py">View git blame</a></li>
           <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/d1one777/py/issues/new">Reference in new issue</a></li>
       </ul>
     </details-menu>
@@ -1204,10 +1163,10 @@
      hidden
      data-tagsearch-url="/d1one777/py/find-symbols"
      data-tagsearch-ref="master"
-     data-tagsearch-path="test-input.py"
+     data-tagsearch-path="arg_switch.py"
      data-tagsearch-lang="Python"
-     data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:221679676,&quot;ref&quot;:&quot;master&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB48CA:145500B:5DCD3F53&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/test-input.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;,&quot;user_id&quot;:24757703}}"
-     data-hydro-click-hmac="8ca706ddb10b1ddf546d42814ff1d0c2335426e2035a6974a4f510aa5da0bf55">
+     data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:221679676,&quot;ref&quot;:&quot;master&quot;,&quot;language&quot;:&quot;Python&quot;,&quot;client_id&quot;:&quot;1923826292.1567522385&quot;,&quot;originating_request_id&quot;:&quot;0771:4187E:DB7193:145A372:5DCD3F83&quot;,&quot;originating_url&quot;:&quot;https://github.com/d1one777/py/blob/master/arg_switch.py&quot;,&quot;referrer&quot;:&quot;https://github.com/d1one777/py&quot;,&quot;user_id&quot;:24757703}}"
+     data-hydro-click-hmac="a20f5ce302cb86e11c46e4b02fc579c7c98418f8aefa51a1aa7154f9e3cdb174">
   <div class="Popover-message Popover-message--large Popover-message--top-left TagsearchPopover mt-1 mb-4 mx-auto Box box-shadow-large">
     <div class="TagsearchPopover-content js-tagsearch-popover-content overflow-auto" style="will-change:transform;">
     </div>
@@ -1229,7 +1188,7 @@
 <div class="footer container-lg width-full p-responsive" role="contentinfo">
   <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
-      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.53990s from unicorn-6f46b469f4-h7bkd">GitHub</span>, Inc.</li>
+      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.28145s from unicorn-c78988749-k5slk">GitHub</span>, Inc.</li>
         <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
         <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
         <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
